@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Siakad Universitas Jambi by Najwa Aulia Saphana</title>
+    <style>
+        body{
+            background-color: #ebeff2;
+            color: #505458;
+        }
+        .kolom{
+            color: #797979;
+            background-color: #f5f5f5;
+        }
+        .headercard{
+            background-color: #188ae2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top p-2" style="background-color: #ebeff2;">
+        <div class="container">
+            <a class="navbar-brand" style="font-weight: 500;  color: #505458;" href="#">Biodata Mahasiswa</a>
+        </div>
+    </nav>
+    <!-- body utama -->
+    <div class="container shadow-sm bg-body rounded p-5">
+        <div class="card border-0 shadow-sm rounded">
+            <div class="headercard card-header text-white"><strong>Data Pokok / Primary Data</strong></div>
+            <div class="card-body">
+                <form action="">
+                    <div class="mb-3 mt-2">
+                        <label for="nama" class="mb-2"><strong>Nama Mahasiswa / Student Name</strong></label>
+                        <input type="text" class="form-control" id="nama" required>
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="nama" class="mb-2"><strong>Tempat Lahir / Place of Birth</strong></label>
+                        <input type="text" class="form-control" id="tmpt_lahir">
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="nama" class="mb-2"><strong>Tanggal Lahir / Date of Birth (dd-mm-YYYY -> Tanggal-bulan-tahun)</strong></label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <label for="nama"><strong>Jenis Kelamin</strong></label>
+                    <div class="mb-3 mt-1"><label class="radio-inline col-1">
+                        <input type="radio" name="optradio"> Laki-Laki
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio"> Perempuan
+                        </label>
+                    </div>
+                    <div class="mb-3 mt-2">
+                        <label for="nama" class="mb-2"><strong>Tanggal Lahir di Ijazah / Date of Birth in Diploma (Wajib Diisi)</strong></label>
+                        <input type="text" class="form-control" id="tgl_lahir" required>
+                    </div>
+                    <div class="mb-2 mt-2">
+                        <label for="nama" class="mb-2"><strong>NIK KTP / National ID Card Number (Wajib Diisi)</strong></label>
+                        <input type="text" class="form-control" aria-describedby="NIK" required>
+                        <div id="NIK" class="form-text">Masukan 16 Digit Nomor Induk Kependudukan</div>
+                    </div>
+                    <label for="nama" class="mb-2 mt-2"><strong>Agama / Religion (Wajib Diisi)</strong></label>
+                    <select class="form-select mb-3" required>
+                        <option>Pilih Agama</option>
+                        <option>Islam</option>
+                        <option>Katolik</option>
+                        <option>Protestan</option>
+                        <option>Buddha</option>
+                        <option>Hindu</option>
+                        <option>Konghucu</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <!-- Start Alamat Tempat Tinggal / Address -->
+        <div class="card border-0 shadow-sm rounded mt-4">
+            <div class="headercard card-header text-white"><strong>Alamat Tempat Tinggal / Address</strong></div>
+            <div class="card-body ">
+                <form action="">
+                    <label for="nama" class="mb-2"><strong>Jenis Tempat Tinggal Saat Ini/ Current Type of Residence (Wajib Diisi)</strong></label>
+                    <select class="form-select form-control">
+                        <option>Bersama orang tua</option>
+                        <option>Wali</option>
+                        <option>Kost</option>
+                        <option>Asrama</option>
+                        <option>Panti Asuhan</option>
+                        <option>Lainnya</option>
+                    </select>
+                    
+                    <div class="row mb-3">
+                        <div class="col mt-3">
+                            <div class="card border-0 shadow-sm rounded">
+                                <div class="kolom card-header border-0"><strong>Alamat Utama / Original Address (Alamat Asal)</strong></div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Jalan / Street</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>RT / House Number</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                        <div class="form-text">Isikan 2 Digit Nomor RT ex: 01</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>RW / Citizens Association Number</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                        <div class="form-text">Isikan 2 Digit Nomor RW ex: 01</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Desa / Kelurahan / Village Name (Wajib Diisi)</strong></label>
+                                        <input type="text" class="form-control" id="nama" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Kecamatan / Districts (Wajib Diisi)</strong></label>
+                                        <input type="text" class="form-control" id="nama" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Kabupaten / Regency</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Kode POS / Postal Code (Wajib Diisi)</strong></label>
+                                        <input type="text" class="form-control" id="nama" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col mt-3">
+                            <div class="card border-0 shadow-sm rounded">
+                                <div class="kolom card-header border-0"><strong>Alamat Kost di Jambi / Address in Jambi</strong></div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Alamat / Address</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>RT / House Number</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                        <div class="form-text">Isikan 2 Digit Nomor RT ex: 01</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>RW / Citizens Association Number</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                        <div class="form-text">Isikan 2 Digit Nomor RW ex: 01</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Desa / Kelurahan / Village Name (Wajib Diisi)</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nama" class="mb-2"><strong>Kode POS / Postal Code (Wajib Diisi)</strong></label>
+                                        <input type="text" class="form-control" id="nama">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Alamat Tempat Tinggal / Address -->
+
+        <!-- Start Data Penunjang Lainnya / Additional Data -->
+        <div class="card border-0 shadow-sm rounded mt-4 mb-sm-5">
+            <div class="headercard card-header text-white"><strong>Data Penunjang Lainnya / Additional Data</strong></div>
+            <div class="card-body">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Nomor Telepon Seluler / Phone Number (Wajib diisi dengan format 08xxx)</strong></label>
+                        <input type="text" class="form-control" id="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Email (Wajib Diisi)</strong></label>
+                        <input type="text" class="form-control" id="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Hobi / Hobby</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Kewarganegaraan / Nationality (Wajib Diisi)</strong></label>
+                        <input type="text" class="form-control" id="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Golongan Darah / Blood Type</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Jumlah Saudara / Number of Sibling</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <label for="kebutuhanKhusus" class="mb-2"><strong>Kebutuhan Khusus / Special Needs</strong></label>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                                <label class="form-check-label" for="check1">A - Tuna Netra</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                                <label class="form-check-label" for="check2">B - Tuna Rungu</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option3" value="something">
+                                <label class="form-check-label" for="check2">C - Tuna Grahita Ringan</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option4" value="something">
+                                <label class="form-check-label" for="check2">C1 - Tuna Grahita Sedang</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option5" value="something">
+                                <label class="form-check-label" for="check2">D - Tuna Daksa Ringan</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option6" value="something">
+                                <label class="form-check-label" for="check2">D1 - Tuna Daksa Sedang</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="option7" value="something" checked>
+                                <label class="form-check-label" for="check1">E - Tuna Laras</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option8" value="something">
+                                <label class="form-check-label" for="check2">F - Tuna Wicara</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option8" value="something">
+                                <label class="form-check-label" for="check2">H - Hiperaktif</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option10" value="something">
+                                <label class="form-check-label" for="check2">I - Cerdas Isitimewa</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option11" value="something">
+                                <label class="form-check-label" for="check2">J - Bakat Isitimewa</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option12" value="something">
+                                <label class="form-check-label" for="check2">K - Kesulitan Belajar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="nama" class="mb-2"><strong>Alat Transportasi Yang Digunakan / Transportation Equipment Used 
+                    </strong></label>
+                    <select class="form-select form-control mb-3">
+                        <option>Jalan kaki</option>
+                        <option>Angkutan umum/bus</option>
+                        <option>Mobil/bus antar jemput</option>
+                        <option>Kereta api</option>
+                        <option>Ojek</option>
+                        <option>Andong/bendi/sado/dokar/delman/becak</option>\
+                        <option>Perahu penyeberangan/rakit</option>
+                        <option>Kuda</option>
+                        <option>Sepeda</option>
+                        <option>Sepeda motor</option>
+                        <option>Mobil pribadi</option>
+                        <option>Lainnya</option>
+                    </select>
+                    <label for="nama"><strong>Penerima Kartu Penjamin Sosial (KPS)</strong></label>
+                    <div class="mb-3 mt-1">
+                        <label class="radio-inline col-1">
+                            <input type="radio" name="optradio"> Ya
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio"> Tidak
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Nomor KPS (Jika Penerima KPS)</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>NPWP (Nomor Pokok Wajib Pajak)</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="mb-2"><strong>Catatan</strong></label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Data Penunjang Lainnya / Additional Data -->
+    <hr />
+        <div class="container mt-sm-5">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="p-3" style="background-color: #fff2db; border: 1px solid; border-color: #ffe2ae; border-radius: 5px;">
+                        Sebelum Melakukan Update Data Personal, Periksa Kembali Isian Data Personal, Pastikan Semua Data Telah Terisi Dengan Benar<br>
+                        <strong>Biodata yang anda isikan akan di laporkan ke Pangkalan Data PD Dikti.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+            <center>
+                <button type="button" class="btn text-white center-block" style="border-radius: 2px; background-color: #5b69bc;">
+                    <i class="bi bi-sd-card"></i>
+                    Update Data Personal
+                </button>
+            </center>
+            <div class="container mt-sm-5 bg-light border-top p-4 rounded">
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <button type="button" class="btn btn-primary"><i class="bi bi-chevron-left"></i> Previous</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-primary">Next <i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <hr />
+</body>
+<footer>
+    <div class="container p-4">
+        © 2022 Copyright: Najwa Aulia Saphana 
+    </div>
+</footer>
+</html>
